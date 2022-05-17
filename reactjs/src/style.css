@@ -1,0 +1,258 @@
+* {
+	box-sizing: border-box;	
+	font-family: 'Poppins', sans-serif;
+	z-index: 1;
+	color: #222222;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	min-height: 100vh;
+    background: #10311017;
+}
+
+.nav-bar {
+	z-index: 10;
+	background:#02384ce6;
+	height: 70px;
+    box-shadow: 2px 0px 5px 1px #6a726c;
+	display:flex;
+	align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo-container {
+	display:flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.logo-icon {
+	height: auto;
+	width: 70px;
+}
+
+.logo-text {
+	font-family: 'Macondo', cursive;
+	text-decoration: underline;
+    font-size: 30px;
+    color: #ffffffeb;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+.search-engine-holder {
+	padding-top:100px;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+
+.search-engine-input {
+	outline: none;
+	border:none;
+	font-family: 'Poppins', sans-serif;
+
+    padding: 5px 20px;
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: -1px 2px 1px 0px #aabcc2
+}
+
+.contact-grid {
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+}
+
+@media  screen and (max-width: 600px) {
+	.contact-card-main {
+		width: 100% !important;
+	}
+}
+
+.contact-card-main {
+	position: relative;
+	width: 270px;
+	min-height: 240px;
+	background: #fff;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 2px #d9d9d9;
+}
+.contact-card-background {
+	width: 100%;
+	padding: 40px;
+	background: #02384ce6;
+	position: absolute;
+}
+.contact-card-shift {
+	margin-top: 25px;
+	position: relative;
+}
+
+.contact-card-user-image {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+.contact-card-details {
+	padding: 10px;
+}
+
+
+.person-name {
+	margin: 0;
+    font-size: 13.5px;
+    font-weight: 600;
+	text-align:center;
+}
+
+.person-address {
+	margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+	text-align:center;
+}
+
+.person-website {
+	margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+	text-align:center;
+	color: blue;
+}
+
+
+.person-phone-label {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.person-phone-list {
+    margin: 0;
+    padding: 0;
+    color: #1d6078;
+}
+
+.person-phone-list > li {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 6%;
+}
+
+.new-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    background: #194a5c;
+    padding: 7px;
+    border-radius: 20px;
+    width: 115px;
+    text-align: center;
+    font-size: 15px;
+	cursor: pointer;
+    /* box-shadow: 2px 0px 1px 0px #929090; */
+}
+.fulid {
+	padding-top:80px;
+}
+
+.create-contact-cointainer {
+	display: block;
+	margin: auto;
+    width: 385px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.create-contact-cointainer > h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+    margin-bottom: -20px;
+}
+
+.input-form-text {
+    padding: 3px;
+    width: 90%;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+    border-bottom: 1px solid #ccc;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.add-new-btn {
+    padding: 10px;
+    width: 85%;
+    margin-top: 12px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background: #194a5c;
+    cursor: pointer;
+	outline:none;
+}
+
+.form-error-label {
+	color: red;
+	font-size: 9px;
+	display: block;
+	margin-top:4px;
+	text-align:left;
+	padding-left: 17px
+}
+form {
+    text-align: center;
+}
+
+.input-custom-phone {
+	width: 87%;
+}
+
+.input-phone-add {
+	cursor: pointer;
+}
+.action-success {
+    display: block;
+	color: #fff;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+.contact-card-options {
+	position: absolute;
+    top: 0;
+    right: 5px;
+    color: #fff;
+}
+.contact-card-options > span {
+	color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+}
